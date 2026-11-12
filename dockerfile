@@ -16,4 +16,4 @@ WORKDIR /var/www/html/
 # RUN composer install --no-dev --optimize-autoloader
 
 # Ekspos port 80 (port default Apache)
-EXPOSE 80
+EXPOSE 3000
