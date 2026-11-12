@@ -1,10 +1,17 @@
-{ 
-  "name": "praktikum/simpus-mini", 
-  "description": "Aplikasi Sistem Perpustakaan Mini", 
-  "type": "project", 
-  "require": { 
-    "php": "^8.1", 
-    "ext-pdo": "*", 
-    "ext-pdo_pgsql": "*" 
-  } 
-} 
+{
+    "name": "praktikum/simpus-mini",
+    "description": "Aplikasi Sistem Perpustakaan Mini",
+    "type": "project",
+    "require": {
+        "php": "^8.1",
+        "ext-pdo": "*",
+        "ext-pdo_pgsql": "*"
+    },
+    "config": {
+        "platform": {
+            "php": "8.1.0",
+            "ext-pdo": "1.0",
+            "ext-pdo_pgsql": "1.0"
+        }
+    }
+}
