@@ -1,6 +1,8 @@
 <?php
 $page_title = "Beranda";
 require __DIR__ . '/includes/koneksi.php'; 
+
+print_r($pdo);
 try {
     $totalBuku = $pdo->query("SELECT COUNT(*) FROM buku")->fetchColumn();
     $totalAnggota = $pdo->query("SELECT COUNT(*) FROM anggota")->fetchColumn();
