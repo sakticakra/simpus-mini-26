@@ -1,16 +1,16 @@
 <?php
-$page_title = "Beranda";
-require __DIR__ . '/includes/koneksi.php'; 
+// $page_title = "Beranda";
+// require __DIR__ . '/includes/koneksi.php'; 
 
-try {
-    $totalBuku = $pdo->query("SELECT COUNT(*) FROM buku")->fetchColumn();
-    $totalAnggota = $pdo->query("SELECT COUNT(*) FROM anggota")->fetchColumn();
-    $totalDipinjam = $pdo->query("SELECT COUNT(*) FROM peminjaman WHERE status = 'dipinjam'")->fetchColumn();
-} catch (PDOException $e) {
-    die("<h1>Error pada Query Database:</h1><p>" . $e->getMessage() . "</p>");
-}
+// try {
+//     $totalBuku = $pdo->query("SELECT COUNT(*) FROM buku")->fetchColumn();
+//     $totalAnggota = $pdo->query("SELECT COUNT(*) FROM anggota")->fetchColumn();
+//     $totalDipinjam = $pdo->query("SELECT COUNT(*) FROM peminjaman WHERE status = 'dipinjam'")->fetchColumn();
+// } catch (PDOException $e) {
+//     die("<h1>Error pada Query Database:</h1><p>" . $e->getMessage() . "</p>");
+// }
 
-include __DIR__ . '/includes/header.php';
+// include __DIR__ . '/includes/header.php';
 ?>
 
 <section>
